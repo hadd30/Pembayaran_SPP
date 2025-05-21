@@ -17,16 +17,16 @@
 
         <hr class="text-slate-200">
 
-        <form action="">
+        <form action="../proses_login_petugas.php" method="post">
 
             <div class="mb-4 mt-5">
                 <label for="username" class="block text-sm text-slate-700">Username</label>
-                <input type="Username" placeholder="Masukan Username Anda.." class="mt-1 w-full px-3 py-2 border border-slate-300 rounded-md focus:outline-none focus:ring focus:ring-blue-600">
+                <input type="text" id="username" name="username" placeholder="Masukan Username Anda.." class="mt-1 w-full px-3 py-2 border border-slate-300 rounded-md focus:outline-none focus:ring focus:ring-blue-600">
             </div>
 
             <div class="mb-4">
                 <label for="password" class="block text-sm text-slate-700">Password</label>
-                <input type="password" id="password" placeholder="Masukan Password Anda.." class="mt-1 w-full px-3 py-2 border border-slate-300 rounded-md focus:outline-none focus:ring focus:border-blue-600">
+                <input type="password" id="password" name="password" placeholder="Masukan Password Anda.." class="mt-1 w-full px-3 py-2 border border-slate-300 rounded-md focus:outline-none focus:ring focus:border-blue-600">
             </div>
 
             <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">LOGIN</button>

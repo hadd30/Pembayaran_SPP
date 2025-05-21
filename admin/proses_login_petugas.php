@@ -13,9 +13,13 @@ if(mysqli_num_rows ($query)>0) {
     $_SESSION['nama_petugas'] = $data['nama_petugas'];
     $_SESSION['level'] = $data['level'];
     if($data['level']== 'admin') {
-        header('Location:admin/admin.php');
+        header('Location:index3.php');
     }elseif($data['level']== 'petugas'){
         header('Location:petugas/petugas.php');
+    }else{
+        echo "<script>alert('Maaf login gagal, silahkan ulangi lagi');
+        window.location.assign('index2.php');
+        </script>";
     }
 }
 ?>

@@ -1,3 +1,20 @@
+<?php
+
+  session_start();
+
+if(empty($_SESSION['id_petugas'])){
+  echo "<script>alert('Maaf anda belum login');
+  window.location.assign('../index2.php');
+  </script>";
+}
+if($_SESSION['level']!= 'admin'){
+  echo "<script>alert('Maaf anda bukan sesi admin');
+      window.location.assign('../index2.php');
+      </script>";
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,7 +31,7 @@
       </div>
       <div class="flex text-sm">
         <a href="admin.php" class="bg-green-700 text-white mr-2 mt-3 rounded-md py-1 px-2 hover:bg-green-600 hover:transitio hover:scale-100">Administrator</a>
-        <a href="admin.php?url=spp" class="bg-green-700 text-white mr-2 mt-3 rounded-md py-1 px-2 hover:bg-green-600 hover:transitio hover:scale-100">SPP</a>
+        <a href="index3.php?url=spp" class="bg-green-700 text-white mr-2 mt-3 rounded-md py-1 px-2 hover:bg-green-600 hover:transitio hover:scale-100">SPP</a>
         <a href="admin.php?url=kelas" class="bg-green-700 text-white mr-2 mt-3 rounded-md py-1 px-2 hover:bg-green-600 hover:transitio hover:scale-100">Kelas</a>
         <a href="admin.php?url=siswa" class="bg-green-700 text-white mr-2 mt-3 rounded-md py-1 px-2 hover:bg-green-600 hover:transitio hover:scale-100">Siswa</a>
         <a href="admin.php?url=petugas" class="bg-green-700 text-white mr-2 mt-3 rounded-md py-1 px-2 hover:bg-green-600 hover:transitio hover:scale-100">Petugas</a>
