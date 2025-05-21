@@ -1,6 +1,6 @@
 <?php
 
-$koneksi = mysqli_connect('localhost', 'root', '', 'db_spp_ukk');
+$koneksi = mysqli_connect('localhost', 'root', '', 'db_spp');
 
 if(!$koneksi) {
     echo "Koneksi gagal";
