@@ -32,7 +32,7 @@
               echo "<h4><b>Selamat Datang Di Halaman Administrator.</h4></b>";
               echo "Aplikasi Pembayaran SPP Digunakan Untuk Mempermudah Dalam Mencata Pembayaran Siswa / Siswi Di sekolah.";
             }else{
-              include $file.'.php';
+            include $file.'.php';
             }
             ?>
           </div>
