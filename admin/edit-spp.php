@@ -1,6 +1,6 @@
 <?php
-$id_spp = $_GET['id-spp'];
-include'koneksi.php';
+$id_spp = $_GET['id_spp'];
+include 'koneksi.php';
 $sql = "SELECT*FROM spp WHERE id_spp='$id_spp'";
 $query = mysqli_query($koneksi, $sql);
 $data = mysqli_fetch_array($query);
@@ -16,7 +16,7 @@ $data = mysqli_fetch_array($query);
 
     <hr class="text-slate-300 mt-6">
 
-    <form method="post" action="?url=proses-edit-spp&id_spp=<?= $id_spp; ?>" class="space-y-4">
+    <form method="post" action="?url=proses-edit-spp=<?= $id_spp; ?>" class="space-y-4">
         <div class="mb-4">
             <label class="block text-gray-700 font-medium mb-1">Tahun</label>
             <input type="number" name="tahun" id="tahun" maxlength="4" required value="<?= $data['tahun'] ?>" class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500" />

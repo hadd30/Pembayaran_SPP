@@ -43,7 +43,7 @@
 
         <tbody>
             <?php
-            include './koneksi.php';
+            include 'koneksi.php';
             $no = 1;
             $sql = "SELECT * FROM siswa, spp, kelas 
                     WHERE siswa.id_kelas = kelas.id_kelas 

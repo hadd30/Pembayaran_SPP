@@ -7,7 +7,7 @@
     $no_telp = $_POST['no_telp'];
     $d_spp = $_POST['id_spp'];
 
-    include'koneksi.php';
+    include 'koneksi.php';
     $sql = "UPDATE spp SET nis='$nis', nama='$nama' WHERE id_kelas='$id_kelas alamat='$alamat no_telp='$no_telp id_spp='$id_spp";
     $query = mysqli_query($koneksi, $sql);
     if($query) {

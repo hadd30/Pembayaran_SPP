@@ -8,7 +8,7 @@
 
     <hr class="text-slate-300 mt-6">
 
-    <form method="post" action="?url=proses-tambah.php" class="space-y-4">
+    <form method="post" action="?url=proses-tambah-spp" class="space-y-4">
         <div class="mb-4">
             <label class="block text-gray-700 font-medium mb-1">Tahun</label>
             <input type="number" name="tahun" id="tahun" maxlength="4" required

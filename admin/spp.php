@@ -32,7 +32,7 @@
             </thead>
 
             <?php
-            include'koneksi.php';
+            include 'koneksi.php';
             $no = 1;
             $sql = "SELECT*FROM spp ORDER BY id_spp DESC";
             $query = mysqli_query($koneksi, $sql);
